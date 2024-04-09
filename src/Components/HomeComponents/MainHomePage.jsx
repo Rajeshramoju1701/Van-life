@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import NavButton from "../NavButton"
 export default function MainHomePage(){
     
     return(
@@ -11,7 +12,7 @@ export default function MainHomePage(){
                 <p>Add adventure to your life by joining the #vanlife movement.</p>
                 <p>Rent the perfect van to make your perfect road trip</p>
                 </div>
-                <Link to="/vans">Find your van</Link>
+                <NavButton>Find your van</NavButton>
             </div>
             </div>
         </main>

@@ -1,9 +1,13 @@
 import React from 'react'
 import Home from './Components/Home'
 import About from './Components/About'
+import VansList from './Components/VansList'
+import VanDetails from './Components/VanDetails'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-function App() {
+import "../server"
 
+
+function App() {
   return (
     <BrowserRouter>
       <nav>
@@ -20,6 +24,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/vans' element={<VansList />} />
+        <Route path='/vans/:id' element = {<VanDetails />} />
       </Routes>
     </BrowserRouter>
   )

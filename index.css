@@ -5,7 +5,6 @@
 body{
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
     font-family:"Inter", sans-serif;
 
 }
@@ -32,6 +31,7 @@ nav a{
     display: flex;
     margin-left: auto;
     gap: 1em;
+
 }
 
 .nav-elements li{
@@ -48,10 +48,11 @@ main{
     flex-direction: column;
     justify-content: space-around;
     height: 385px;
+    color: #FFFFFF;
 }
 
 
-.card a{
+.nav-button {
     display: block;
     width: 100%;
     background-color: #FF8C38;
@@ -106,4 +107,87 @@ footer p{
 
 .explore-vans > * {
     margin-left: 32px;
+}
+
+.van-item{
+    width: 175px;
+    flex-grow: 1;
+}
+
+.van-item img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.van-description h1{
+    font-size: 20px;
+    margin-right: auto;
+}
+
+
+
+.van-description{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-weight: 700;
+}
+
+.vans-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.van-type p{
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #000000;
+    color:#FF8C38;
+    border-radius: 10px;
+}
+
+.van-item p{
+    margin: 0;
+    text-align: end;
+    font-size: 14px;
+}
+
+.van-description h1,.van-description p{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.van-details img{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.van-details{
+    color: #161616;
+}
+
+
+
+.van-price{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.van-details-back{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.van-details-back p{
+    text-decoration: underline;
+}
+
+.back-link{
+    text-decoration: none;
+    color:#161616;
 }

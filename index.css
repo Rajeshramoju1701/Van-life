@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family:"Inter", sans-serif;
+
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.nav-elements{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#000000;
+}
+
+.nav-elements ul{
+    display: flex;
+    margin-left: auto;
+    gap: 1em;
+}
+
+.nav-elements li{
+    list-style: none;
+}
+
+main{
+    background: url("./src/assets/main_background.svg");
+    background-size: cover;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 385px;
+}
+
+
+.card a{
+    display: block;
+    width: 100%;
+    background-color: #FF8C38;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 0px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #252525;
+    color: #AAAAAA;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+    padding: 30px;
+}
+
+.about-main{
+    color:#000000;
+}
+
+.about-main img{
+    width: 100%;
+}
+
+.explore-vans{
+    background-color: #FFCC8D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.description{
+    line-height: 1em;
+}
+
+.explore-vans a{
+    align-self: flex-start;
+    text-decoration: none;
+    padding: 12px 22px;
+    background-color: #000000;
+    color:#AAAAAA;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.explore-vans > * {
+    margin-left: 32px;
+}
